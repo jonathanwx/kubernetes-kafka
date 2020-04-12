@@ -27,7 +27,7 @@ spec:
       containers:
       - name: kafka
         imagePullPolicy: IfNotPresent
-        image: jonathanwx/kubernetes-kafka:latest
+        image: jonathanwx/kubernetes-kafka:2.12-2.4.1
         ports:
           - containerPort: 9092
         env:
