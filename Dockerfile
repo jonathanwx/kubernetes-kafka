@@ -1,7 +1,7 @@
 FROM openjdk:8u232-jdk
 
 LABEL maintainer="jonathanlichi@gmail.com"
-ARG KAFKA_VERSION=2.4.1
+ARG KAFKA_VERSION=2.2.0
 ARG SCALA_VERSION=2.12
 WORKDIR /tmp
 
