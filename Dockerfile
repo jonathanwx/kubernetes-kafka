@@ -20,8 +20,8 @@ WORKDIR /tmp
 RUN apt-get update && apt-get install -y wget iputils-ping lsof
 
 # alternative mirror site replace if needed
-# https://mirrors.tuna.tsinghua.edu.cn/apache/kafka/${KAFKA_VERSION}/kafka_${SCALA_VERSION}-${KAFKA_VERSION}.tgz
-RUN wget https://downloads.apache.org/kafka/${KAFKA_VERSION}/kafka_${SCALA_VERSION}-${KAFKA_VERSION}.tgz
+# RUN wget https://mirrors.tuna.tsinghua.edu.cn/apache/kafka/${KAFKA_VERSION}/kafka_${SCALA_VERSION}-${KAFKA_VERSION}.tgz
+RUN wget https://archive.apache.org/dist/kafka/${KAFKA_VERSION}/kafka_${SCALA_VERSION}-${KAFKA_VERSION}.tgz
 
 RUN tar -xzvf kafka_${SCALA_VERSION}-${KAFKA_VERSION}.tgz -C / && mv /kafka_${SCALA_VERSION}-${KAFKA_VERSION} /kafka
 
